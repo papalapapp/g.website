@@ -13,4 +13,19 @@ const navSlide = () => {
 
 navSlide();
 
-console.log("hello")
+
+
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".navbar");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 100) {
+            header.removeClass('bignavbar').addClass("smallnavbar");
+        } else {
+            header.removeClass("smallnavbar").addClass('bignavbar');
+        }
+    });
+});
