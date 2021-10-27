@@ -53,7 +53,7 @@ nav {
 	font-size: 20px;
 	letter-spacing: 1px;
 	font-style: bold;
-	margin-top: 15px;
+	margin-top: 10px;
 }
 
 .logo img {
@@ -65,6 +65,8 @@ nav {
 
 .logo h1 {
 	float: left;
+	font-size: 36px;
+	font-weight: 2.5;
 }
 
 .logo a {
@@ -129,23 +131,25 @@ nav {
 	.nav-links {
 		position: fixed;
 		right: 0px;
-		height: 92vh;
-		top: 67px;
+		height: 0vh;
+		top: 68px;
 		background: linear-gradient(to left bottom, 
-		rgba(25, 126, 255, 0.95),
+		rgba(25, 126, 255, 1),
 		rgba(25, 126, 255, 1)
 		);
 		display: flex;
 		flex-direction: column;
 		align-items: center;	
 		justify-content: space-evenly;
-		width: 0%;
+		width: 100%;
 		/*transform: translate(100%);*/
 		transition: 0.4s ease-in;
-		overflow: hidden;;
+		overflow: hidden;
+		z-index: 1;
 	}
-	.nav-links li {
+	.nav-links li a {
 		opacity: 0.8;
+		font-size: 18px;
 	}
 	.burger-button {
 		display: block;
@@ -154,7 +158,8 @@ nav {
 
 .nav-active {
 	/*transform: translate(0%);*/
-	width: 50%;
+	/*width: 100%;*/
+	height: 90vh;
 }
 
 .toggle .line1 {
@@ -190,31 +195,45 @@ nav {
 .home-page-text {
 	width: 40%;
 	float: left;
-	padding-top: 200px;
+	padding-top: 225px;
+	background-color: white;
 }
 
-.home-page-text div {
-	margin-top: 15px;
+#text-algemein {
+	margin-top: 20px;
+}
+
+.home-page-text h2 {
+	font-weight: 2;
+	width: 90%;
+	font-size: 38px;
+	line-height: 50px;
+	color: #147EFB;
+	opacity: 1;
 }
 
 .home-page-img {
-	padding-left: 50px;
+	background-color: white;
 	float: left;
-	text-align: right;
 	width: 60%;
+	display: flex;
+	justify-content: right;
 }
 
 .home-page-img img {
-	margin-top: 54px;
-	width: 100%;
+	max-width: 500px;
+	margin-top: 73px;
 }
 
-.karten-container {
+.karten-background {
+	width: 100%;
+	background-color: #147EFB;
+	opacity: 0.9;
+	padding-top: 40px;
 	clear: both;
-	height: 100vh;
-	background-color: white;
-	padding-top: 25px;
+	height: 90vh;
 }
+
 
 .karte {
 	float: left;
@@ -222,13 +241,13 @@ nav {
 	border: 1px solid #147EFB;
 	border-radius: 25px;
 	height: 540px;
-	width: 40%;
+	width: 37%;
 	padding: 15px;
 }
 
 .karte h3 {
 	text-align: center;
-
+	margin-top: 5px;
 }
 
 .karte img {
@@ -268,5 +287,30 @@ nav {
 	float: right;
 }
 
+
+.angebotsbeispiele {
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+	clear: both;
+}
+
+.angebotsbeispiele h2 {
+	margin-bottom: 50px;
+}
+
+.karte-angebot {
+	float: left;
+	width: 31%;
+	height: 500px;
+	background-color: red;
+	border: 1px solid black;
+	margin-bottom: 38px;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #f7f7f7;
+	border-radius: 20px;
+
+}
 
 
