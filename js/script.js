@@ -15,7 +15,7 @@ navSlide();
 
 
 
-
+// adabtive nabar
 $(function() {
     //caches a jQuery object containing the header element
     var header = $(".navbar");
